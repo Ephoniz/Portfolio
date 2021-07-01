@@ -11,10 +11,11 @@ body{
 }
 nav{
   height: 6rem;
-  width: 100vw;
+  width: 100%;
   background-color: transparent;
   display: flex;
   position: fixed;
+  top: 0;
   z-index: 10;
   justify-content: space-between;
 }
