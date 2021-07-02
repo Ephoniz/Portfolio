@@ -3,6 +3,11 @@ body {
   background-color: #0B1930;
   width: 100vw;
 }
+
+.main-container {
+  overflow-x:hidden
+}
+
 .start {
   width: 75%;
   margin: 300px auto;
@@ -44,6 +49,14 @@ body {
 
 @media screen and (max-width: 500px){
   .start{
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      width: 20rem;
+    }
+
     h2 {
       font-size: 44px;
     }
@@ -173,5 +186,9 @@ body {
     .thin-line {
       display: none;
     }
+  }
+
+  .about .photo-box {
+    margin: 0;
   }
 }
