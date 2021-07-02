@@ -39,4 +39,21 @@ document.addEventListener('turbolinks:load', () => {
       //Hamburger Animation
       hamburger.classList.toggle("toggle");
   });
+
+
+  const sections = document.querySelectorAll("section")
+  
+  document.addEventListener('scroll', () => {
+    sections.forEach(section => {
+      const top = section.getBoundingClientRect().top
+      if (top <= 800) {
+        section.classList.add('section-transition')
+        section.classList.remove('section-hide')
+
+      } else {
+        section.classList.add('section-hide')
+        section.classList.remove('section-transition')
+      }
+    });
+  });
 });

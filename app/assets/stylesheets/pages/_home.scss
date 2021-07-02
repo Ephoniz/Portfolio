@@ -8,9 +8,31 @@ body {
   overflow-x:hidden
 }
 
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(45px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-hide {
+  opacity: 0;
+}
+
+.section-transition {
+  animation: transitionIn 1.5s;
+}
+
 .start {
   width: 75%;
   margin: 300px auto;
+  animation: transitionIn 1.5s;
 
   h1{
     font-family: 'Roboto', sans-serif;
@@ -65,6 +87,7 @@ body {
 
 
 .coloured-border-btn {
+  animation: transitionIn 4s;
   font-family: 'Fira Code', monospace;
   color:#65FFDA;
   background-color: transparent;
@@ -174,7 +197,11 @@ body {
   }
 }
 
-
+.text-box {
+  p {
+    color: #8893AF;
+  }
+}
 
 
 @media screen and (max-width: 650px) {
@@ -192,3 +219,13 @@ body {
     margin: 0;
   }
 }
+
+// 02 section Work experience
+
+.worked {
+  width: 60%;
+  margin: 450px auto;
+
+}
+
+
