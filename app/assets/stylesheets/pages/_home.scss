@@ -225,7 +225,12 @@ body {
 .worked {
   width: 50%;
   margin: 450px auto;
+}
 
+@media screen and (max-width: 700px) {
+  .worked {
+    width: 85%;
+  }
 }
 
 
@@ -349,6 +354,7 @@ i {
       height: 100%;
       object-fit: cover;
       left: 0;
+      top: 0;
     }
 
     .skills-used li{
