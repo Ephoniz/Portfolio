@@ -18,15 +18,18 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
-const loading = document.querySelector(".loader-wrapper")
 
 document.addEventListener('DOMContentLoaded', (e) => {
-  setTimeout(()=> {
-    loading.classList.add('d-none');
-  }, 1000)
+  
 });
 
 document.addEventListener('turbolinks:load', () => {
+  const loading = document.querySelector(".loader-wrapper")
+
+  setTimeout(()=> {
+    loading.classList.add('d-none');
+  }, 1000)
+
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
   const links = document.querySelectorAll(".nav-links li");
