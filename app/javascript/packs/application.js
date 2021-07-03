@@ -23,6 +23,13 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+const loading = document.querySelector(".loader-wrapper")
+
+document.addEventListener('DOMContentLoaded', (e) => {
+  setTimeout(()=> {
+    loading.classList.add('d-none');
+  }, 2000)
+});
 
 document.addEventListener('turbolinks:load', () => {
   const hamburger = document.querySelector(".hamburger");
