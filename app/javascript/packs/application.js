@@ -23,7 +23,7 @@ const loading = document.querySelector(".loader-wrapper")
 document.addEventListener('DOMContentLoaded', (e) => {
   setTimeout(()=> {
     loading.classList.add('d-none');
-  }, 2000)
+  }, 1000)
 });
 
 document.addEventListener('turbolinks:load', () => {
