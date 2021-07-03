@@ -225,7 +225,12 @@ body {
 .worked {
   width: 50%;
   margin: 450px auto;
+}
 
+@media screen and (max-width: 700px) {
+  .worked {
+    width: 85%;
+  }
 }
 
 
@@ -242,27 +247,27 @@ body {
 
 .project-card {
   position: relative;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   text-align: right;
+  margin-top: 100px;
 
   .image {
-    background-color: #65ffdbc5 !important;
-    background-blend-mode: darken;
+    background-color: #1aad8b !important;
+    background-blend-mode:overlay;
     background-size: cover !important;
-    width: 24rem;
-    height: 220px;
+    width: 30rem;
+    height: 250px;
     position: absolute;
     border-radius: 6px;
-    top: 60px;
+    top: 30px;
     transition: all 0.6s;
   }
 
   h6 {
     position: relative;
-    z-index: 10;
     font-family: 'Fira Code', monospace;
     color: #65FFDA;
   }
@@ -278,7 +283,6 @@ body {
   position: relative;
   font-weight: 500;
   font-size: 2rem;
-  z-index: 10;
   color: white;
   font-family: 'Roboto', sans-serif;
 }
@@ -286,6 +290,10 @@ body {
 .project-title:hover {
   text-decoration: none;
   color: #65FFDA;
+}
+
+.lockup {
+  width: 100%;
 }
 
 .lockup-text {
@@ -296,7 +304,6 @@ body {
   margin-left: auto;
   background-color: #122340;
   position: relative;
-  z-index: 10;
 
   p {
     color: #CCD7F5;
@@ -307,7 +314,6 @@ body {
   margin-top: 30px;
   list-style-type: none;
   position: relative;
-  z-index: 10;
 }
 
 .skills-used li {
@@ -320,7 +326,6 @@ body {
 
 .external-links {
   position: relative;
-  z-index: 10;
 }
 
 i {
@@ -349,6 +354,7 @@ i {
       height: 100%;
       object-fit: cover;
       left: 0;
+      top: 0;
     }
 
     .skills-used li{
@@ -382,4 +388,27 @@ i {
   .projects {
     width: 80%;
   }
+}
+
+.flip-horizontal {
+  text-align: left;
+
+  .lockup-text {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .image {
+    right: 0;
+  }
+
+  .skills-used li{
+    margin-right: 5px;
+    margin-left: 0;
+  }
+
+  .skills-used ul{
+    margin-left: 0;
+  }
+
 }
