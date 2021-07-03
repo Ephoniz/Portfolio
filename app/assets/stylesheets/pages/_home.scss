@@ -1,4 +1,6 @@
 // Specific CSS for your home-page
+
+
 body {
   background-color: #0B1930;
   width: 100vw;
@@ -108,7 +110,8 @@ body {
 
 .about {
   width: 75%;
-  margin: 450px auto;
+  margin: 200px auto;
+  padding-top: 150px;
 
   p {
     color: #8893AF;
@@ -118,7 +121,7 @@ body {
   .my-image {
     background-color: #2ea589;
     background-image: url(https://avatars.githubusercontent.com/u/38792563?v=4);
-    background-size: fill;
+    background-size: cover;
     background-position: center;
     background-blend-mode: luminosity;
     height: 300px;
@@ -181,6 +184,7 @@ body {
 
 .my-skills {
   margin-left: 30px;
+  list-style-type: none;
   -webkit-column-count: 2;  /* Chrome/Opera, Safari */
   -moz-column-count: 2; /* Mozilla Firefox */
   column-count: 2;
@@ -190,7 +194,7 @@ body {
   }
 
   li:before {
-    content: '>'; 
+    content: '▹'; 
     margin-left: -20px; 
     margin-right: 10px;
     color: #65FFDA;
@@ -218,13 +222,22 @@ body {
   .about .photo-box {
     margin: 0;
   }
+
+  .about .my-image {
+    margin: 30px auto;
+  }
+
+  .about .image-border {
+    display: none;
+  }
 }
 
 // 02 section Work experience
 
 .worked {
   width: 50%;
-  margin: 450px auto;
+  margin: 200px auto;
+  padding-top: 150px;
 }
 
 @media screen and (max-width: 700px) {
@@ -238,7 +251,8 @@ body {
 
 .projects {
   width: 60%;
-  margin: 400px auto;
+  margin: 150px auto;
+  padding-top: 150px;
 }
 
 .projects-cards{
@@ -495,7 +509,8 @@ i {
 
 .contact {
   width: 60%;
-  margin: 300px auto;
+  margin: 150px auto;
+  padding-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -625,7 +640,7 @@ font-family: 'Fira Code', monospace;
 
 .alert-success {
 background-color: #cafff32a;
-border-color: #65FFDA;
+border-color: #6a706f;
 color: #46fdd2;
 text-align: center;
 font-size: 1em;
@@ -639,4 +654,21 @@ color: #468847;
 text-align: left;
 font-size: .8em;
 font-family: 'Fira Code', monospace;
+}
+
+.section-footer {
+  p{
+    font-family: 'Fira Code', monospace;
+    color: #8893AF;
+  }
+
+  a {
+    font-family: 'Fira Code', monospace;
+    color: #CCD7F5;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #65FFDA;
+  }
 }

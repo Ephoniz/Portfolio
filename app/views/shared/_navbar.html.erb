@@ -1,6 +1,6 @@
     <nav>
         <div class="logo">
-            <img src="https://www.onddi.com/wp-content/uploads/2016/12/envato-logo-small.svg" alt="Logo Image">
+            <a href="/" data-turbolinks="false"><%= image_tag 'logo.png' %></a>
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -8,10 +8,10 @@
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#"><span>01.</span>About</a></li>
-            <li><a href="#"><span>02.</span>Experience</a></li>
-            <li><a href="#"><span>03.</span>Work</a></li>
-            <li><a href="#"><span>04.</span>Contact</a></li>
-            <li><button class="join-button" href="#">Resumes</button></li>
+            <li><a href="#about"  data-turbolinks="false"><span>01.</span>About</a></li>
+            <li><a href="#worked" data-turbolinks="false"><span>02.</span>Experience</a></li>
+            <li><a href="#projects" data-turbolinks="false"><span>03.</span>Work</a></li>
+            <li><a href="#contact" data-turbolinks="false"><span>04.</span>Contact</a></li>
+            <%= link_to "Resume", asset_path("resume.pdf"), class: 'join-button', target: 'blank' %>
         </ul>
     </nav>
