@@ -489,3 +489,154 @@ i {
     height: 0%;
   }
 }
+
+
+//Contact section
+
+.contact {
+  width: 60%;
+  margin: 300px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .lockup {
+    text-align: center;
+
+    p {
+      color: #8893AF;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+
+  label {
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+  }
+}
+
+.contact-title {
+  text-align: center;
+
+  h3 {
+    color: #65FFDA;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+  }
+}
+
+.form-container{
+  width: 100%;
+}
+
+#contact {
+  width: 70%;
+  text-align: center;
+}
+
+.contact-form-text-area {
+  background-color: transparent;
+  border: 1px solid #65FFDA;
+  color: white;
+  font-family: 'Fira Code', monospace;
+  width: 70%;
+}
+
+.contact-form-text-area::placeholder {
+  color: #8893AF;
+}
+
+#home_name {
+  background-color: transparent;
+  border: 1px solid #65FFDA;
+  font-family: 'Roboto', sans-serif;
+  width: 60%;
+  height: 30px;
+  color: white;
+}
+
+#home_email {
+  background-color: transparent;
+  border: 1px solid #65FFDA;
+  font-family: 'Roboto', sans-serif;
+  width: 60%;
+  height: 30px;
+  color: white;
+}
+
+.btn-my-form {
+  font-family: 'Fira Code', monospace;
+  margin: 20px auto;
+  min-width: 70%;
+  display: block;
+  padding: 15px 10px;
+  color: #0B1930;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.btn-my-form:hover {
+  border-color: #65FFDA;
+  background-color: transparent;
+  color: #65FFDA;
+  transition: all 0.6s;
+}
+
+@media screen and (max-width: 700px) {
+  #contact {
+    width: 100%;
+  }
+
+  .contact-form-text-area {
+    width: 100%;
+  }
+  #home_email {
+    width: 100%;
+  }
+
+  #home_name {
+    width: 100%;
+  }
+}
+
+.hidden { display: none; }
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+font-size: .8em;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+font-size: .8em;
+font-family: 'Fira Code', monospace;
+}
+
+.alert-success {
+background-color: #cafff32a;
+border-color: #65FFDA;
+color: #46fdd2;
+text-align: center;
+font-size: 1em;
+font-family: 'Fira Code', monospace;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+font-size: .8em;
+font-family: 'Fira Code', monospace;
+}
