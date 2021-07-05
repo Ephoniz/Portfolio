@@ -43,6 +43,19 @@ document.addEventListener('turbolinks:load', () => {
 
       //Hamburger Animation
       hamburger.classList.toggle("toggle");
+
+
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove("open");
+          
+          links.forEach(link => {
+            link.classList.remove("imvisible");
+          });
+    
+          hamburger.classList.remove("toggle");
+        });
+      })
   });
 
 
