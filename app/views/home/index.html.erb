@@ -7,7 +7,7 @@
     <p>
       I'm a web developer now based in Madrid who specializes in creating outstanding digital experiences. Dedicated to creating web applications that are accessible, appealing, and practical.
     </p>
-    <a href="#" class="coloured-border-btn">Contact me!</a>
+   <%= mail_to "maruan.mx@gmail.com", "Contact me!", class: "coloured-border-btn" %>
   </div>
 
   <section class="about" id="about">
@@ -43,7 +43,7 @@
         <div class="photo-box">
           <div class="position-relative">
             <div class="image-border"></div>
-            <div class="my-image"></div>
+            <div class="my-image" style="background-image: url(<%= asset_path('me.jpeg') %>)"></div>
           </div>
         </div>
       </div>
